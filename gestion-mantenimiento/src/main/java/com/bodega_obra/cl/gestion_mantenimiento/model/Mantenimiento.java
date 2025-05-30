@@ -20,12 +20,9 @@ public class Mantenimiento {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
-    @Column(nullable = false, length = 50)
-    private String item_id;
-
+    
     @Column(nullable = false)
-    private Integer fecha;
+    private String fecha;
 
     @Column(nullable = false, length = 150)
     private String tipo;

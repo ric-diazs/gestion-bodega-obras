@@ -62,7 +62,6 @@ public class MantenimientoController {
             Mantenimiento mantenimientoAModificar = mantenimientoService.findById(id);
 
             mantenimientoAModificar.setId(id);
-            mantenimientoAModificar.setItem_id(mantenimiento.getItem_id());;
             mantenimientoAModificar.setFecha(mantenimiento.getFecha());
             mantenimientoAModificar.setObservaciones(mantenimiento.getObservaciones());
             mantenimientoAModificar.setRealizado(mantenimiento.getRealizado());
