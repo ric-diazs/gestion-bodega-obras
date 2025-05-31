@@ -1,0 +1,26 @@
+name: CI Gestion bodega con Java maven
+# Se ejecutara cuando se haga un 'push' o un 'pull request'
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest # Se usara una VM con Ubuntu
+
+    steps:
+    - name: Clonar repositorio
+      uses: actions/checkout@v4
+
+    - name: Configuracion JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
+
+    - name: Compilar microservicios con Maven
+      run: ./mvnw clean install
