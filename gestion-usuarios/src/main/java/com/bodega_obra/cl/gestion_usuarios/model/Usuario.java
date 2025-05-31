@@ -31,7 +31,7 @@ public class Usuario {
     @Column(name = "correo", nullable = false, length = 50)
     private String correo;
 
-    @Column(name = "activo", nullable = false, length = 1) // activo = 1 (activo), activo = 0 (inactivo)
+    @Column(name = "activo", nullable = false, length = 1) // activo = 1 (usuario activo), activo = 0 (usuario inactivo)
     private Character activo;
     
     // Relacion muchos-a-uno con Rol: Varios usuarios pueden estar asociados a un mismo Rol
