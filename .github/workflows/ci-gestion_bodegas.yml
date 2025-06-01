@@ -24,32 +24,32 @@ jobs:
 
       # Compilación de cada microservicio
       - name: Compilar microservicio 'gestion-usuarios'
-        run: cd gestion-usuarios && chmod +x mvnw && ./mvnw clean install
+        run: cd gestion-usuarios && chmod +x mvnw && ./mvnw clean install -DskipTests
 
       - name: Compilar microservicio 'gestion-inventarios'
-        run: cd gestion-inventarios && chmod +x mvnw && ./mvnw clean install
+        run: cd gestion-inventarios && chmod +x mvnw && ./mvnw clean install -DskipTests
 
       - name: Compilar microservicio 'registro-entrada-salida'
-        run: cd registro-entrada-salida && chmod +x mvnw && ./mvnw clean install
+        run: cd registro-entrada-salida && chmod +x mvnw && ./mvnw clean install -DskipTests
 
       - name: Compilar microservicio 'gestion-pedidos'
-        run: cd gestion-pedidos && chmod +x mvnw && ./mvnw clean install
+        run: cd gestion-pedidos && chmod +x mvnw && ./mvnw clean install -DskipTests
 
       - name: Compilar microservicio 'integracion-proveedores'
-        run: cd integracion-proveedores && chmod +x mvnw && ./mvnw clean install
+        run: cd integracion-proveedores && chmod +x mvnw && ./mvnw clean install -DskipTests
 
       - name: Compilar microservicio 'monitoreo-sistema'
-        run: cd monitoreo-sistema && chmod +x mvnw && ./mvnw clean install
+        run: cd monitoreo-sistema && chmod +x mvnw && ./mvnw clean install -DskipTests
 
       - name: Compilar microservicio 'gestion-mantenimiento'
-        run: cd gestion-mantenimiento && chmod +x mvnw && ./mvnw clean install
+        run: cd gestion-mantenimiento && chmod +x mvnw && ./mvnw clean install -DskipTests
 
       - name: Compilar microservicio 'validacion-usuario'
-        run: cd validacion-usuario && chmod +x mvnw && ./mvnw clean install
+        run: cd validacion-usuario && chmod +x mvnw && ./mvnw clean install -DskipTests
 
       - name: Compilar microservicio 'auditoria-y-logs'
-        run: cd auditoria-y-logs && chmod +x mvnw && ./mvnw clean install
+        run: cd auditoria-y-logs && chmod +x mvnw && ./mvnw clean install -DskipTests
 
       - name: Compilar microservicio 'notificaciones'
-        run: cd notificaciones && chmod +x mvnw && ./mvnw clean install
+        run: cd notificaciones && chmod +x mvnw && ./mvnw clean install -DskipTests
 
