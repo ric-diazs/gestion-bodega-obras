@@ -1,5 +1,13 @@
 # Microservicios: Sistema de gestión de bodegas en obra.
 
+|           |                                                 |
+|:----------|:------------------------------------------------|
+|Grupo      |05                                               |
+|Integrantes|Adrian Rivera, Benjamin Llanquiman y Ricardo Díaz|
+|Profesor   |Sergio Fuentes Pérez                             |
+|Curso      |Desarrollo Full Stack 01 (DSY1103)               |
+|Sección    |002V                                             |
+
 En este repositorio se alojan los diez microservicios que, como grupo, decidimos trabajar para la evaluación parcial 2 del curso Desarrollo Full Stack 1.
 
 Los microservicios son parte de nuestro proyecto semestral, que corresponde a un sistema de gestión de bodegas en obras, que son aquellas bodegas que se encuentran al interior de las obras de construcción, las cuales almacenan y distribuyen todas las herramientas y materiales necesarios en las obras que se están realizando. Este sistema, previamente, fue diseñado con una arquitectura monolítica, pero dada las dificultades en su uso, gestión y mantenimiento, se decidió migrarlo a una arquitectura de microservicios.
