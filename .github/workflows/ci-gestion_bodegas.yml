@@ -22,5 +22,34 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Compilar microservicios con Maven
-      run: ./mvnw clean install
+     # Compilacion de microservicios
+     - name: Compilar microservicio 'gestion-usuarios'
+     - run: cd gestion-usuarios && ./mvnw clean install
+
+     - name: Compilar microservicio 'gestion-inventarios'
+     - run: cd gestion-inventarios && ./mvnw clean install
+
+     - name: Compilar microservicio 'registro-entrada-salida'
+     - run: cd registro-entrada-salida && ./mvnw clean install
+
+     - name: Compilar microservicio 'gestion-pedidos'
+     - run: cd gestion-pedidos && ./mvnw clean install
+
+     - name: Compilar microservicio 'integracion-proveedores'
+     - run: cd integracion-proveedores && ./mvnw clean install
+
+     - name: Compilar microservicio 'monitoreo-sistema'
+     - run: cd monitoreo-sistema && ./mvnw clean install
+
+     - name: Compilar microservicio 'gestion-mantenimiento'
+     - run: cd gestion-mantenimiento && ./mvnw clean install
+
+     - name: Compilar microservicio 'validacion-usuario'
+     - run: cd validacion-usuario && ./mvnw clean install
+
+     - name: Compilar microservicio 'auditoria-y-logs'
+     - run: cd auditoria-y-logs && ./mvnw clean install
+
+     - name: Compilar microservicio 'notificaciones'
+     - run: cd notificaciones && ./mvnw clean install
+
